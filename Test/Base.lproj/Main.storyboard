@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6LS-zY-PXI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="mbF-UG-4Zy">
+            <objects>
+                <viewController id="6LS-zY-PXI" customClass="ViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FlC-bH-VXb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yv-1p-XR1">
+                                <rect key="frame" x="20" y="824" width="37" height="30"/>
+                                <state key="normal" title="Undo"/>
+                                <connections>
+                                    <action selector="touchUndoButton:" destination="6LS-zY-PXI" eventType="touchUpInside" id="NRP-d4-9Me"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCu-jj-nac">
+                                <rect key="frame" x="65" y="824" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="touchResetButton:" destination="6LS-zY-PXI" eventType="touchUpInside" id="WFw-Dk-XBG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Is-Ae-1fr">
+                                <rect key="frame" x="112" y="824" width="30" height="30"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="touchColorButton1:" destination="6LS-zY-PXI" eventType="touchUpInside" id="1cd-jL-7kd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIJ-lG-Jq5">
+                                <rect key="frame" x="150" y="824" width="30" height="30"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="touchColorButton2:" destination="6LS-zY-PXI" eventType="touchUpInside" id="wkZ-vi-2YE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USe-9m-czu">
+                                <rect key="frame" x="188" y="824" width="30" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="touchColorButton3:" destination="6LS-zY-PXI" eventType="touchUpInside" id="RHI-wd-jOM"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="1" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="zYC-p5-Bfj">
+                                <rect key="frame" x="224" y="824" width="176" height="31"/>
+                                <connections>
+                                    <action selector="touchSlider:" destination="6LS-zY-PXI" eventType="valueChanged" id="m3P-tg-bP0"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3Yv-1p-XR1" firstAttribute="leading" secondItem="ow3-7W-nfq" secondAttribute="leading" constant="20" id="HIb-ym-giW"/>
+                            <constraint firstItem="ow3-7W-nfq" firstAttribute="bottom" secondItem="WIJ-lG-Jq5" secondAttribute="bottom" constant="8" id="LvJ-cY-4XY"/>
+                            <constraint firstItem="bCu-jj-nac" firstAttribute="leading" secondItem="3Yv-1p-XR1" secondAttribute="trailing" constant="8" id="Pdb-o3-zIS"/>
+                            <constraint firstItem="ow3-7W-nfq" firstAttribute="bottom" secondItem="bCu-jj-nac" secondAttribute="bottom" constant="8" id="USZ-mv-fQ6"/>
+                            <constraint firstItem="ow3-7W-nfq" firstAttribute="bottom" secondItem="3Yv-1p-XR1" secondAttribute="bottom" constant="8" id="Yqr-fu-2ot"/>
+                            <constraint firstItem="5Is-Ae-1fr" firstAttribute="leading" secondItem="bCu-jj-nac" secondAttribute="trailing" constant="8" id="ZBC-O1-QLP"/>
+                            <constraint firstItem="WIJ-lG-Jq5" firstAttribute="leading" secondItem="5Is-Ae-1fr" secondAttribute="trailing" constant="8" id="aG6-02-mTn"/>
+                            <constraint firstItem="USe-9m-czu" firstAttribute="leading" secondItem="WIJ-lG-Jq5" secondAttribute="trailing" constant="8" id="eUQ-YA-5Ha"/>
+                            <constraint firstItem="ow3-7W-nfq" firstAttribute="bottom" secondItem="5Is-Ae-1fr" secondAttribute="bottom" constant="8" id="fdW-Wu-FE9"/>
+                            <constraint firstItem="zYC-p5-Bfj" firstAttribute="leading" secondItem="USe-9m-czu" secondAttribute="trailing" constant="8" id="foA-hP-C8w"/>
+                            <constraint firstItem="ow3-7W-nfq" firstAttribute="trailing" secondItem="zYC-p5-Bfj" secondAttribute="trailing" constant="16" id="htj-M2-g9v"/>
+                            <constraint firstItem="ow3-7W-nfq" firstAttribute="bottom" secondItem="zYC-p5-Bfj" secondAttribute="bottom" constant="8" id="vEy-gv-8ls"/>
+                            <constraint firstItem="ow3-7W-nfq" firstAttribute="bottom" secondItem="USe-9m-czu" secondAttribute="bottom" constant="8" id="vlV-AK-lwY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ow3-7W-nfq"/>
+                    </view>
+                    <connections>
+                        <outlet property="resetButton" destination="bCu-jj-nac" id="xNW-41-ZUb"/>
+                        <outlet property="slider" destination="zYC-p5-Bfj" id="Xn6-1E-ElR"/>
+                        <outlet property="undoButton" destination="3Yv-1p-XR1" id="a0g-km-Owa"/>
+                        <outletCollection property="colorButtons" destination="5Is-Ae-1fr" collectionClass="NSMutableArray" id="Ay5-d4-8Ct"/>
+                        <outletCollection property="colorButtons" destination="WIJ-lG-Jq5" collectionClass="NSMutableArray" id="N6C-c6-N1L"/>
+                        <outletCollection property="colorButtons" destination="USe-9m-czu" collectionClass="NSMutableArray" id="ZHe-1N-31e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dfb-Ia-J4Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-686.95652173913049" y="-524.33035714285711"/>
+        </scene>
+    </scenes>
+</document>
